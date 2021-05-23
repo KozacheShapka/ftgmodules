@@ -12,7 +12,7 @@ class LeaveMod(loader.Module):
 			return
 		text = utils.get_args_raw(message)
 		if not text:
-			text = "До связи."
+			text = "Я выхожу из группы. Всем пока..."
 		if text.lower() == "del":
 			await message.delete()
 		else:
