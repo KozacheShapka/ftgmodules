@@ -8,7 +8,7 @@ class LeaveMod(loader.Module):
 	async def leavecmd(self, message):
 		""".leave"""
 		if not message.chat:
-			await message.edit("<b>Дурка блять</b>")
+			await message.edit("<b>Я выхожу из группы. Всем пока😔...</b>")
 			return
 		text = utils.get_args_raw(message)
 		if not text:
