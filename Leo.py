@@ -115,7 +115,7 @@ class leomatchMod(loader.Module):
              try:
                  response = conv.wait_event(events.NewMessage(incoming=True,
                                                               from_users= 1234060895))
-                 await event.client.send_message(chat, 'Продолжить просмотр анкет')
+                 await event.client.send_message(chat, 'Смотреть анкеты')
                  response = await response
              except YouBlockedUserError:
                  await event.reply('<code>Разблокируй @leomatchbot</code>')
