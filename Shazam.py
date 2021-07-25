@@ -57,5 +57,5 @@ async def get_audio_shazam(m):
         await m.edit("<b>[Shazam]</b> Распознаю...")
         return ae
     else:
-        await utils.answer(m, "<b>[Shazam]</b> reply to audio...")
+        await utils.answer(m, "<b>[Shazam]</b> поддерживается только аудиосообщения и мп3.")
         return None
