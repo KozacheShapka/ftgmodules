@@ -5,7 +5,7 @@ from telethon.tl.functions.channels import LeaveChannelRequest
 class LeaveMod(loader.Module):
 	strings = {"name": "BanMe"}
 	@loader.sudo
-	async def leavecmd(self, message):
+	async def banmecmd(self, message):
 		""".banme"""
 		if not message.chat:
 			await message.edit("<b>Ты успешно забанил себя, больше ты не сможешь вернуться...</b>")
