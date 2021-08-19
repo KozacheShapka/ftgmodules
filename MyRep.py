@@ -46,5 +46,5 @@ class MyRepMod(loader.Module):
                     elif message.text == "-":
                         total = int(number) - 1
                         self.db.set("MyRep", "my_repa", total)
-                        await message.reply(f"<b>Ты понизил(а) мою репутацию. \n И теперь кол-во репутацит в мою сторону: {total}👎.</b>")
+                        await message.reply(f"<b>Ты понизил(а) мою репутацию. \n И теперь кол-во репутации в мою сторону: {total}👎.</b>")
         except: pass
