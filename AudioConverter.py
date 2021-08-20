@@ -1,4 +1,4 @@
-# @Sekai_Yoneya
+# @JotaroRokini
 
 from pydub import AudioSegment 
 from .. import loader, utils 
@@ -86,5 +86,5 @@ class AudioConverterMod(loader.Module):
   audio.export(m, format=formatik) 
   await message.edit("[Audio Converter] Отправляем...") 
   m.seek(0) 
-  await message.client.send_file(message.to_id, m, reply_to=reply.id, attributes=[types.DocumentAttributeAudio(duration = reply.document.attributes[0].duration, title=f"Converted to " + formatik, performer="@Sekai_Yoneya")]) 
+  await message.client.send_file(message.to_id, m, reply_to=reply.id, attributes=[types.DocumentAttributeAudio(duration = reply.document.attributes[0].duration, title=f"Converted to " + formatik, performer="JotaroRokini")]) 
   await message.delete()
