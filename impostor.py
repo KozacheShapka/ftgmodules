@@ -23,7 +23,7 @@ class ImpMod(loader.Module):
             imps = ['wasn`t the impostor', 'was the impostor']
             text2 = f"\n{remain} impostor(s) remain."
         else:
-            imps = ['не был предателем', 'оказался одним из предалатей']
+            imps = ['не был предателем', 'оказался одним из предателей']
             text2 = f"\n{remain} предател{'я' if remain == 2 else 'ь'} остался."
 
         background = requests.get(f"https://fl1yd.ml/modules/stuff/impostor{randint(1,22)}.png").content
