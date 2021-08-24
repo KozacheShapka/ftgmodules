@@ -12,7 +12,7 @@ def register(cb):
 class TagallMod(loader.Module):
 	"""Tagall"""
 	strings = {
-		"name": "TagAll", "subscribe to": "https://t.me/KeyZenD"
+		"name": "TagAll", "subscribe to": "None
 	}
 
 	async def client_ready(self, client, db):
