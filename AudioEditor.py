@@ -7,7 +7,7 @@ class AudioEditorMod(loader.Module):
     "Модуль для работы со звуком(???)"
     strings = {"name": "AudioEditor"}
     async def basscmd(self, m):
-        """.bass [уровень bass'а 2-100 (Default 2)] <reply to audio>
+        """.bass [уровень bass'а 2-100 (Default 2)] поддерживаются аудиофайлы и войсы...
         BassBoost"""
         args = utils.get_args_raw(m)
         if not args: lvl = 2
@@ -139,18 +139,18 @@ async def get_audio(m, pref):
         ae.reply = reply
         ae.voice = reply.document.attributes[0].voice
         ae.duration = reply.document.attributes[0].duration
-        await m.edit(f"[{pref}] Скачиваю...")
+        await m.edit(f"[{pref}] Качаю...")
         ae.audio = AudioSegment.from_file(io.BytesIO(await reply.download_media(bytes)))
-        await m.edit(f"[{pref}] Работаю...")
+        await m.edit(f"[{pref}] Фигарю файл...")
         return ae
     else: await m.edit(f"[{pref}] reply to audio..."); return None
 async def go_out(m, audio, out, pref, title, fs=None):
     o = io.BytesIO()
     o.name = "audio." + ("ogg" if audio.voice else "mp3")
     if audio.voice: out.split_to_mono()
-    await m.edit(f"[{pref}] Экспортирую...")
+    await m.edit(f"[{pref}] Сейвю...")
     out.export(o, format="mp3" if audio.voice else "wav", bitrate="44100" if audio.voice else None, codec="u16le" if audio.voice else None)
     o.seek(0)
-    await m.edit(f"[{pref}] Отправляю...")
+    await m.edit(f"[{pref}] Отправляю ахуенную работу...")
     await m.client.send_file(m.to_id, o, reply_to=audio.reply.id, voice_note=audio.voice, attributes=[types.DocumentAttributeAudio(duration = fs if fs else audio.duration, title=title, performer="JotaroRokini")] if not audio.voice else None)
     await m.delete()
