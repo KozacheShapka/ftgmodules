@@ -18,7 +18,7 @@ async def register(cb):
 class DemoterMod(loader.Module):
 	"""Демотиваторы"""
 	strings = {
-		"name": "Demoter"
+		"name": "ДемАтивАтАр"
 	}
 
 	async def client_ready(self, client, db):
@@ -28,20 +28,20 @@ class DemoterMod(loader.Module):
 		start = datetime.now()
 		text = utils.get_args_raw(message)
 		if not text:
-			await message.edit('<b>ТЕКСТА-ТО НЕТ АЛО</b>')
+			await message.edit('<b>[ДемАтивАтАр] Добавь текст, демотиватор ты наш :/</b>')
 			return
 		if message.is_reply:
 			reply = await message.get_reply_message()
 			data = await check_media(reply)
 			if isinstance(data, bool):
-				message.edit('<b>РЕПЛАЙ НА ФОТО ИЛИ СТИКЕР</b>')
+				me </b>')
 				return
 		else:
-			message.edit('<b>РЕПЛАЙ НА ФОТО ИЛИ СТИКЕР</b>')
+			message.edit('<b>[ДемАтивАтАр] Стырь фото или стикер</b>')
 			return
 		image = io.BytesIO()
 		await message.client.download_media(data, image)
-		image = Image.open(image)
+		image = Image.open(i
 		image = await demot(text, image)
 		end = datetime.now()
 		duration = (end - start).microseconds / 1000
