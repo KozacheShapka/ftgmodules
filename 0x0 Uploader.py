@@ -11,7 +11,7 @@ logger = logging.getLogger(__name__)
 class x0Mod(loader.Module):
 	"""Uploader"""
 	strings = {
-		"name": "x0.at - Прямая ссылка на файл!"
+		"name": "x0 AT - Прямая ссылка на файл!"
 	}
 
 	async def client_ready(self, client, db):
