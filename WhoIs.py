@@ -14,7 +14,7 @@ class WhoIsMod(loader.Module):
         args = utils.get_args_raw(message)
         reply = await message.get_reply_message()
 
-        await message.edit("<b>Получаю информацию о пользователе...</b>")
+        await message.edit("<b>[Telegram] Сбор информации...</b>")
 
         try:
             if args:
