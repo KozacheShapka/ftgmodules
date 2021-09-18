@@ -38,6 +38,6 @@ class x0Mod(loader.Module):
 			await message.edit(ste(e))
 			return
 		url = x0at.text
-		output = f'<a href="{url}">URL: </a><code>{url}</code>'
+		output = f'<a href="{url}">Ссылка: </a><code>{url}</code>'
 		await message.edit(output)
 	
