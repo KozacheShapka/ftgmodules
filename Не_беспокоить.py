@@ -15,7 +15,7 @@ class EternalOnlineMod(loader.Module):
         """Режим "Не беспокоить".""" 
         if not self.db.get("Eternal Online", "status"): 
             self.db.set("Eternal Online", "status", True) 
-            await message.edit("<b>⛔️Режим "Не беспокоить" включено!</b>") 
+            await message.edit("<b>⛔️Режим (Не беспокоить) включено!</b>") 
             while self.db.get("Eternal Online", "status"): 
                 msg = await message.client.send_message("me", "Telegram best messenger! 🤩")
                 await msg.delete()
@@ -23,7 +23,7 @@ class EternalOnlineMod(loader.Module):
  
         else: 
             self.db.set("Eternal Online", "status", False) 
-            await message.edit("<b>❌Режим "Не беспокоить" отключено!</b>")
+            await message.edit("<b>❌Режим (Не беспокоить) отключено!</b>")
 
     async def watcher(self, message): 
         if self.db.get("Eternal Online", "status"):
