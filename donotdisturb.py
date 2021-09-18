@@ -11,7 +11,7 @@ class EternalOnlineMod(loader.Module):
     async def client_ready(self, client, db): 
         self.db = db 
  
-    async def cmd(self, message): 
+    async def dndcmd(self, message): 
         """Режим "Не беспокоить".""" 
         if not self.db.get("Eternal Online", "status"): 
             self.db.set("Eternal Online", "status", True) 
