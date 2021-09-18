@@ -6,16 +6,16 @@ from asyncio import sleep
 @loader.tds 
 class EternalOnlineMod(loader.Module): 
     """Вечный онлайн, который будет читать сообщения в чатах.""" 
-    strings = {'name': 'Online'} 
+    strings = {'name': 'Не беспокоить'} 
  
     async def client_ready(self, client, db): 
         self.db = db 
  
-    async def onlinecmd(self, message): 
-        """Включить вечный онлайн""" 
+    async def cmd(self, message): 
+        """Режим "Не беспокоить".""" 
         if not self.db.get("Eternal Online", "status"): 
             self.db.set("Eternal Online", "status", True) 
-            await message.edit("<b>Вечный онлайн включен</b>") 
+            await message.edit("<b>⛔️Режим "Не беспокоить" включено!</b>") 
             while self.db.get("Eternal Online", "status"): 
                 msg = await message.client.send_message("me", "Telegram best messenger! 🤩")
                 await msg.delete()
@@ -23,7 +23,7 @@ class EternalOnlineMod(loader.Module):
  
         else: 
             self.db.set("Eternal Online", "status", False) 
-            await message.edit("<b>Вечный онлайн выключен</b>")
+            await message.edit("<b>❌Режим "Не беспокоить" отключено!</b>")
 
     async def watcher(self, message): 
         if self.db.get("Eternal Online", "status"):
