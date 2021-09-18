@@ -1,4 +1,4 @@
-#clown... again :/ by @Sekai_Yoneya
+#clown... again :/
 
 from .. import loader, utils  # pylint: disable=relative-beyond-top-level
 import logging
@@ -11,7 +11,7 @@ logger = logging.getLogger(__name__)
 class x0Mod(loader.Module):
 	"""Uploader"""
 	strings = {
-		"name": "0x0 Uploader"
+		"name": "x0.at - Прямая ссылка на файл!"
 	}
 
 	async def client_ready(self, client, db):
@@ -20,7 +20,7 @@ class x0Mod(loader.Module):
 	
 	@loader.sudo
 	async def oxocmd(self, message):
-		await message.edit("<b>Uploading...</b>")
+		await message.edit("<b>[x0 AT] Идёт отправка файла...</b>")
 		reply = await message.get_reply_message()
 		if not reply:
 			await message.edit("<b>Reply to message!</b>")
