@@ -22,13 +22,13 @@ class VideoEditorMod(loader.Module):
 
     strings = {
         "name": "VideoEditor",
-        "downloading": "<b>[{}]</b> Downloading...",
-        "working": "<b>[{}]</b> Working...",
-        "exporting": "<b>[{}]</b> Exporting...",
-        "set_value": "<b>[{}]</b> Specify the level from {} to {}...",
-        "reply": "<b>[{}]</b> reply to video/gif...",
-        "set_time": "<b>[{}]</b> Specify the time in the format start(ms):end(ms)",
-        "set_link": "<b>[{}]</b> Enter link...",
+        "downloading": "<b>[{}]</b> Качаю...",
+        "working": "<b>[{}]</b> Обработка... ",
+        "exporting": "<b>[{}]</b> Экспортирую проект...",
+        "set_value": "<b>[{}]</b> Установи уровень от {} до {}...",
+        "reply": "<b>[{}]</b> поддерживается только видеофайлы и гиф!",
+        "set_time": "<b>[{}]</b> Укажи время в формате start(ms):end(ms)",
+        "set_link": "<b>[{}]</b> Введи ссылку...",
     }
 
     @loader.owner
