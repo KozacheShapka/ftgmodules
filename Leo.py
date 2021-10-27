@@ -124,7 +124,7 @@ class leomatchMod(loader.Module):
              yoneya = response.text
              await event.client.send_file(event.to_id, response.media, caption=yoneya)
              
- async def unafkcmd(self, event):
+ async def lunafkcmd(self, event):
          """Выйти из АФК и смотреть анкеты."""
          user_msg = """{}""".format(utils.get_args_raw(event))
          global text
