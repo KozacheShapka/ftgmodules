@@ -32,7 +32,7 @@ class DeMoTiVaToRsMod(loader.Module):
 async def cmds(message, type):
 	event, is_reply = await check_media(message)
 	if not event:
-		await message.edit("<b>Гадэ твоё художество?!</b>")
+		await message.edit("<b>[Демотиватор]❌Это не фото. \n\n⚠️Поддерживаются только фотки</b>")
 		return
 	text = utils.get_args_raw(message)
 	
