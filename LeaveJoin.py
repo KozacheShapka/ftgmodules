@@ -5,7 +5,7 @@ from telethon.tl.functions.channels import JoinChannelRequest, LeaveChannelReque
 
 @loader.tds
 class LeaveJoinMod(loader.Module):
-    strings = {"name": "LeaveJoin"}
+    strings = {"name": "Выйти и зайти нормально;)"}
 
     async def leavejoincmd(self, message):
         if not (message.is_group and message.is_channel):
