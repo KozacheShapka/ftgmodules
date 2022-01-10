@@ -18,7 +18,7 @@ from .. import loader, utils
 class ChatVoiceMod(loader.Module):
     """Module for working with voicechat"""
     strings = {
-        "name": "ChatVoiceMod",
+        "name": "ChatVoiceMod RUS",
         "downloading": "<b>[ChatVoiceMod]</b> 🟡Скачиваю...",
         "playing": "<b>[ChatVoiceMod]</b> 🟢Воспроизодится...",
         "notjoined": "<b>[ChatVoiceMod]</b> ❌Ты не зашёл(-ла) в голосовой чат",
