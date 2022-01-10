@@ -2,6 +2,8 @@
 #     t.me/D4n13l3k00      #
 # This code under AGPL-3.0 #
 
+# Перевод от https://t.me/kozacheshapka #
+
 # requires: py-tgcalls
 
 from typing import *
