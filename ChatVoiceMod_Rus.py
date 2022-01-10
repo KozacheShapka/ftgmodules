@@ -16,7 +16,7 @@ from .. import loader, utils
 
 @loader.tds
 class ChatVoiceModRus(loader.Module):
-    """Модуль для работы в голосовом чате"""
+    """module for working in voice chat"""
     strings = {
         "name": "ChatVoiceMod RUS",
         "downloading": "<b>[ChatVoiceMod]</b> 🟡Скачиваю...",
