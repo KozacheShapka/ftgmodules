@@ -15,7 +15,7 @@ from .. import loader, utils
 
 
 @loader.tds
-class ChatVoiceMod(loader.Module):
+class ChatVoiceModRus(loader.Module):
     """Module for working with voicechat"""
     strings = {
         "name": "ChatVoiceMod RUS",
