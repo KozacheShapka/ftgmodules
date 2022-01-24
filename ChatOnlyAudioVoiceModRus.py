@@ -1,4 +1,4 @@
-﻿#   Coded by D4n13l3k00    #
+#   Coded by D4n13l3k00    #
 #     t.me/D4n13l3k00      #
 # This code under AGPL-3.0 #
 
@@ -24,7 +24,7 @@ class ChatVoiceMod(loader.Module):
     strings = {
         "name": "ChatVoiceMod",
         "downloading": "<b>[ChatVoiceMod]</b> 🟡Скачиваю...",
-        "playing": "<b>[ChatVoiceMod]</b> 🟢Воспроизодится...",
+        "playing": "<b>[ChatVoiceMod]</b> 🟢Воспроизводится...",
         "notjoined": "<b>[ChatVoiceMod]</b> ❌Ты не зашёл(-ла) в голосовой чат",
         "stop": "<b>[ChatVoiceMod]</b> 🔴Остановлено...",
         "leave": "<b>[ChatVoiceMod]</b> 🔴Отключился...",
