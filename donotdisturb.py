@@ -1,4 +1,4 @@
-# @Sekai_Yoneya
+# @KozacheShapka
 
 from .. import loader 
 from asyncio import sleep 
