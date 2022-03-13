@@ -1,4 +1,4 @@
-# @Sekai_Yoneya
+# @KozacheShapka
 
 from telethon import events
 from telethon.errors.rpcerrorlist import YouBlockedUserError
