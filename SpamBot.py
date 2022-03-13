@@ -1,4 +1,4 @@
-# @Sekai_Yoneya
+# @KozacheShapka
 
 from asyncio import sleep
 import random
