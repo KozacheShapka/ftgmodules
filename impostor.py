@@ -26,7 +26,7 @@ class ImpMod(loader.Module):
             imps = ['не был предателем', 'оказался одним из предателей']
             text2 = f"\n{remain} предател{'я' if remain == 2 else 'ь'} остался."
 
-        background = requests.get(f"https://fl1yd.su/modules/stuff/impostor{randint(1,22)}.png").content
+        background = requests.get(f"https://raw.githubusercontent.com/KozacheShapka/ftgmodules/main/resources/impostor/impostor{randint(1,22)}.png").content
         font = requests.get("https://fl1yd.su/modules/stuff/font2.ttf").content
         
         await message.edit("[АМОГУС] ОбработОчка...")
