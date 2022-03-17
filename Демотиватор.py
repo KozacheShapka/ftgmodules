@@ -37,14 +37,14 @@ async def cmds(message, type):
 	text = utils.get_args_raw(message)
 	
 	if not text:
-		await message.edit("<b>ОСЁЛ, ТЕКСТ ДАЙ!</b>")
+		await message.edit("<b>[Демотиватор]❌Нету текста.</b>")
 		return
 	await message.edit("<b>[Демотиватор]🟢В обработке...</b>")
 	bytes_image = await event.download_media(bytes)
 	demotivator = await demotion(font_bytes, bytes_image, text, type)
 	if is_reply:
-		return await event.reply(file=demotivator)
 		await message.delete()
+		return await event.reply(file=demotivator)
 	else:
 		return await event.edit(file=demotivator, text="")
 	
