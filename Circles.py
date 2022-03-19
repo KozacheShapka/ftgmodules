@@ -35,14 +35,14 @@ class CirclesMod(loader.Module):
 			reply = await message.get_reply_message()
 			data = await check_media(reply)
 			if isinstance(data, bool):
-				await utils.answer(message, "<b>Reply to image/sticker or video/gif!</b>")
+				await utils.answer(message, "<b>❌Нет ответа на видеомедиа</b>")
 				return
 		else:
-			await utils.answer(message, "<b>Reply to image/sticker or video/gif!</b>")
+			await utils.answer(message, "<b>❌Нет ответа на видеомедиа</b>")
 			return
 		data, type = data
 		if type == "img":
-			await message.edit("<b>Processing image</b>📷")
+			await message.edit("<b>[В кружочек] Обработка...</b>📷")
 			img = io.BytesIO()
 			bytes = await message.client.download_file(data, img)
 			im = Image.open(img)
@@ -64,7 +64,7 @@ class CirclesMod(loader.Module):
 			im.seek(0)
 			await message.client.send_file(message.to_id, im, reply_to=reply)
 		else:
-			await message.edit("<b>Processing video</b>🎥")
+			await message.edit("<b>[В кружочек] Скачиваю...</b>🎥")
 			await message.client.download_file(data, "video.mp4")
 			video = VideoFileClip("video.mp4")
 			video.reader.close()
@@ -72,7 +72,7 @@ class CirclesMod(loader.Module):
 			m = min(w, h)
 			box = [(w-m)//2, (h-m)//2, (w+m)//2, (h+m)//2]
 			video = video.crop(*box)
-			await message.edit("<b>Saving video</b>📼")
+			await message.edit("<b>[В кружочек] Отправляю...</b>📼")
 			video.write_videofile("result.mp4")
 			await message.client.send_file(message.to_id, "result.mp4", video_note=True, reply_to=reply)
 			os.remove("video.mp4")
