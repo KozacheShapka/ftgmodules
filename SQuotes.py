@@ -1,8 +1,4 @@
-# API/Module authors: @Fl1yd, @spypm
-# Thank for.... - no1!!, no1 helped us, we did everything ourselves
-# But we took one method of get messages from the Mishase's and Droox's modules
-
-# ладно
+# KozacheShapka
 
 
 import io
