@@ -4,8 +4,6 @@
 
 # Перевод от https://t.me/kozacheshapka #
 
-# requires: py-tgcalls
-
 from typing import *
 
 import pytgcalls
