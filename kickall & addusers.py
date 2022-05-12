@@ -1,4 +1,4 @@
-# @Sekai_Yoneya
+
 
 from telethon import events
 from telethon import functions
