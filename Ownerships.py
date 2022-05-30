@@ -18,4 +18,4 @@ class OwnershipsMod(loader.Module):
         for obj in result.chats:
             count += 1
             msg += f'\n• <a href="tg://resolve?domain={obj.username}">{obj.title}</a> <b>|</b> <code>{obj.id}</code>'
-        await message.edit(f'<b>Мои владения: {count}</b>\n {msg}')
+        await message.send_message(message.chat.id, f'<b>Мои владения: {count}</b>\n {msg}')
