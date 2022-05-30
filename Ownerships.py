@@ -2,10 +2,10 @@ from .. import loader
 from telethon.tl.functions.channels import GetAdminedPublicChannelsRequest
 
 
-@loader.tds
 def register(cb):
     cb(OwnershipsMod())
-  
+
+@loader.owner
 class OwnershipsMod(loader.Module):
     """Посмотреть свои владения."""
     strings = {'name': 'Ownerships'}
