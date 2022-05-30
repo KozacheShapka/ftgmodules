@@ -4,7 +4,8 @@ from telethon.tl.functions.channels import GetAdminedPublicChannelsRequest
 
 def register(cb):
     cb(OwnershipsMod())
-    
+
+@loader.tds    
 class OwnershipsMod(loader.Module):
     """Посмотреть свои владения."""
     strings = {'name': 'Ownerships'}
