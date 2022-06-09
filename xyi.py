@@ -1,3 +1,4 @@
+from .. import loader
 from telethon import TelegramClient, sync
 from telethon import events
 
