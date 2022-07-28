@@ -1,15 +1,3 @@
-#             █ █ ▀ █▄▀ ▄▀█ █▀█ ▀
-#             █▀█ █ █ █ █▀█ █▀▄ █
-#              © Copyright 2022
-#           https://t.me/hikariatama
-#
-# 🔒      Licensed under the GNU AGPLv3
-# 🌐 https://www.gnu.org/licenses/agpl-3.0.html
-
-# meta pic: https://0x0.st/ojP2.png
-# meta banner: https://mods.hikariatama.ru/badges/premium_sticks.jpg
-# meta developer: @hikarimods
-
 import random
 from .. import loader
 from telethon.tl.types import Message
