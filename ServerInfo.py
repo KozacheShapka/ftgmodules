@@ -1,14 +1,3 @@
-#             █ █ ▀ █▄▀ ▄▀█ █▀█ ▀
-#             █▀█ █ █ █ █▀█ █▀▄ █
-#              © Copyright 2022
-#           https://t.me/hikariatama
-#
-# 🔒      Licensed under the GNU AGPLv3
-# 🌐 https://www.gnu.org/licenses/agpl-3.0.html
-
-# meta pic: https://img.icons8.com/stickers/500/000000/server-shutdown.png
-# meta developer: @hikarimods
-# scope: hikka_only
 # requires: psutil
 
 import asyncio
@@ -32,13 +21,13 @@ class serverInfoMod(loader.Module):
 
     strings = {
         "name": "ServerInfo",
-        "loading": "<b>👾 Loading server info...</b>",
-        "servinfo": "<b><u>👾 Server Info:</u>\n\n<u>🗄 Used resources:</u>\n    CPU: {} Cores {}%\n    RAM: {} / {}MB ({}%)\n\n<u>🧾 Dist info</u>\n    Kernel: {}\n    Arch: {}\n    OS: {}</b>",
+        "loading": "<b>👾 Загрузка информации о сервере...</b>",
+        "servinfo": "<b><u>👾 Информация о сервере:</u>\n\n<u>🗄 Использовано ОЗУ:</u>\n    Нагрузка на процессор (CPU): {} ядер {}%\n    ОЗУ: {} / {}MB ({}%)\n\n<u>🧾 Dist info</u>\n    Kernel: {}\n    Arch: {}\n    OS: {}</b>",
     }
 
     strings_ru = {
         "loading": "<b>👾 Загрузка информации о сервере...</b>",
-        "servinfo": "<b><u>👾 Информация о сервере:</u>\n\n<u>🗄 Задействованные ресурсы:</u>\n    CPU: {} ядер {}%\n    RAM: {} / {}MB ({}%)\n\n<u>🧾 Информация о ядре</u>\n    Kernel: {}\n    Arch: {}\n    OS: {}</b>",
+        "servinfo": "<b><u>👾 Информация о сервере:</u>\n\n<u>🗄 Использовано ОЗУ:</u>\n    Нагрузка на процессор (CPU): {} ядер {}%\n    ОЗУ: {} / {}MB ({}%)\n\n<u>🧾 Информация о ядре</u>\n    Kernel: {}\n    Arch: {}\n    OS: {}</b>",
         "_cmd_doc_serverinfo": "Показать информацию о сервере",
         "_cls_doc": "Показывает информацию о сервере",
     }
